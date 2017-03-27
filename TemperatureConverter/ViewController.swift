@@ -25,6 +25,15 @@ class ViewController: NSViewController {
         }
     }
 
-
+    @IBAction func convertToFahrenheit(_ sender: AnyObject) {
+        if let celsiusTemperature = Float(celsiusTextField.stringValue) {
+            let fahrenheitTemperature = convert(celsius: celsiusTemperature)
+            fahrenheitLabel.stringValue = fahrenheitTemperature.description
+        }
+    }
+    
+    func convert(celsius: Float) -> Float {
+        return ((celsius * 1.8) + 32.0)
+    }
 }
 
