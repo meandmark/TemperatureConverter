@@ -731,6 +731,10 @@
                             </button>
                         </subviews>
                     </view>
+                    <connections>
+                        <outlet property="celsiusTextField" destination="bWF-JU-cH6" id="2Kl-NA-heZ"/>
+                        <outlet property="fahrenheitLabel" destination="AeB-dq-Kad" id="wE2-EV-2kV"/>
+                    </connections>
                 </viewController>
                 <customObject id="rPt-NT-nkU" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
