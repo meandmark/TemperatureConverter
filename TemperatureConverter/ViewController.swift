@@ -10,6 +10,9 @@ import Cocoa
 
 class ViewController: NSViewController {
 
+    @IBOutlet weak var celsiusTextField: NSTextField!
+    @IBOutlet weak var fahrenheitLabel: NSTextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
