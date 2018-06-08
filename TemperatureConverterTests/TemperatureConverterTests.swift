@@ -48,4 +48,12 @@ class TemperatureConverterTests: XCTestCase {
         XCTAssertEqual(fahrenheitTemperature, fahrenheitExpected, accuracy: 0.01, "-10 degrees Celsius should equal 14 degrees Fahrenheit. Fahrenheit Temperature: \(fahrenheitTemperature)")
     }
     
+    func testNonIntegerFahrenheitConversion() {
+        let vc = ViewController()
+        let celsiusTemperature = Float(3)
+        let fahrenheitExpected = Float(37.4)
+        
+        let fahrenheitTemperature = vc.convert(celsius: celsiusTemperature)
+        XCTAssertEqual(fahrenheitTemperature, fahrenheitExpected, accuracy: 0.01, "3 degrees Celsius should equal 37.4 degrees Fahrenheit. Fahrenheit Temperature: \(fahrenheitTemperature)")
+    }
 }
