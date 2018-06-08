@@ -21,5 +21,12 @@ class TemperatureConverterTests: XCTestCase {
         super.tearDown()
     }
     
-    
+    func testWaterFreezingPoint() {
+        let vc = ViewController()
+        let celsiusTemperature = Float(0)
+        let fahrenheitFreezingPoint = Float(40)
+        
+        let fahrenheitTemperature = vc.convert(celsius: celsiusTemperature)
+        XCTAssertEqual(fahrenheitTemperature, fahrenheitFreezingPoint, accuracy: 0.01, "The freezing point of water should be 40 degrees Fahrenheit. Fahrenheit Temperature: \(fahrenheitTemperature)")
+    }
 }
