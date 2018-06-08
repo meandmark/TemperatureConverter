@@ -12,18 +12,10 @@
 		4D5B7A331E899D2B00FC8F2E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4D5B7A321E899D2B00FC8F2E /* Assets.xcassets */; };
 		4D5B7A361E899D2B00FC8F2E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D5B7A341E899D2B00FC8F2E /* Main.storyboard */; };
 		4D5B7A411E899D2B00FC8F2E /* TemperatureConverterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D5B7A401E899D2B00FC8F2E /* TemperatureConverterTests.swift */; };
-		4D5B7A4C1E899D2B00FC8F2E /* TemperatureConverterUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D5B7A4B1E899D2B00FC8F2E /* TemperatureConverterUITests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
 		4D5B7A3D1E899D2B00FC8F2E /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 4D5B7A231E899D2B00FC8F2E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 4D5B7A2A1E899D2B00FC8F2E;
-			remoteInfo = TemperatureConverter;
-		};
-		4D5B7A481E899D2B00FC8F2E /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 4D5B7A231E899D2B00FC8F2E /* Project object */;
 			proxyType = 1;
@@ -42,7 +34,6 @@
 		4D5B7A3C1E899D2B00FC8F2E /* TemperatureConverterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TemperatureConverterTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4D5B7A401E899D2B00FC8F2E /* TemperatureConverterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemperatureConverterTests.swift; sourceTree = "<group>"; };
 		4D5B7A421E899D2B00FC8F2E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4D5B7A471E899D2B00FC8F2E /* TemperatureConverterUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TemperatureConverterUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4D5B7A4B1E899D2B00FC8F2E /* TemperatureConverterUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemperatureConverterUITests.swift; sourceTree = "<group>"; };
 		4D5B7A4D1E899D2B00FC8F2E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -56,13 +47,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		4D5B7A391E899D2B00FC8F2E /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		4D5B7A441E899D2B00FC8F2E /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -87,7 +71,6 @@
 			children = (
 				4D5B7A2B1E899D2B00FC8F2E /* TemperatureConverter.app */,
 				4D5B7A3C1E899D2B00FC8F2E /* TemperatureConverterTests.xctest */,
-				4D5B7A471E899D2B00FC8F2E /* TemperatureConverterUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -160,24 +143,6 @@
 			productReference = 4D5B7A3C1E899D2B00FC8F2E /* TemperatureConverterTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		4D5B7A461E899D2B00FC8F2E /* TemperatureConverterUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 4D5B7A561E899D2B00FC8F2E /* Build configuration list for PBXNativeTarget "TemperatureConverterUITests" */;
-			buildPhases = (
-				4D5B7A431E899D2B00FC8F2E /* Sources */,
-				4D5B7A441E899D2B00FC8F2E /* Frameworks */,
-				4D5B7A451E899D2B00FC8F2E /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				4D5B7A491E899D2B00FC8F2E /* PBXTargetDependency */,
-			);
-			name = TemperatureConverterUITests;
-			productName = TemperatureConverterUITests;
-			productReference = 4D5B7A471E899D2B00FC8F2E /* TemperatureConverterUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -194,12 +159,6 @@
 						ProvisioningStyle = Automatic;
 					};
 					4D5B7A3B1E899D2B00FC8F2E = {
-						CreatedOnToolsVersion = 8.3;
-						LastSwiftMigration = 0900;
-						ProvisioningStyle = Automatic;
-						TestTargetID = 4D5B7A2A1E899D2B00FC8F2E;
-					};
-					4D5B7A461E899D2B00FC8F2E = {
 						CreatedOnToolsVersion = 8.3;
 						LastSwiftMigration = 0900;
 						ProvisioningStyle = Automatic;
@@ -222,7 +181,6 @@
 			targets = (
 				4D5B7A2A1E899D2B00FC8F2E /* TemperatureConverter */,
 				4D5B7A3B1E899D2B00FC8F2E /* TemperatureConverterTests */,
-				4D5B7A461E899D2B00FC8F2E /* TemperatureConverterUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -238,13 +196,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		4D5B7A3A1E899D2B00FC8F2E /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		4D5B7A451E899D2B00FC8F2E /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -271,14 +222,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		4D5B7A431E899D2B00FC8F2E /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				4D5B7A4C1E899D2B00FC8F2E /* TemperatureConverterUITests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -286,11 +229,6 @@
 			isa = PBXTargetDependency;
 			target = 4D5B7A2A1E899D2B00FC8F2E /* TemperatureConverter */;
 			targetProxy = 4D5B7A3D1E899D2B00FC8F2E /* PBXContainerItemProxy */;
-		};
-		4D5B7A491E899D2B00FC8F2E /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 4D5B7A2A1E899D2B00FC8F2E /* TemperatureConverter */;
-			targetProxy = 4D5B7A481E899D2B00FC8F2E /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -474,36 +412,6 @@
 			};
 			name = Release;
 		};
-		4D5B7A571E899D2B00FC8F2E /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				COMBINE_HIDPI_IMAGES = YES;
-				INFOPLIST_FILE = TemperatureConverterUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.meandmark.TemperatureConverterUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_SWIFT3_OBJC_INFERENCE = On;
-				SWIFT_VERSION = 4.0;
-				TEST_TARGET_NAME = TemperatureConverter;
-			};
-			name = Debug;
-		};
-		4D5B7A581E899D2B00FC8F2E /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				COMBINE_HIDPI_IMAGES = YES;
-				INFOPLIST_FILE = TemperatureConverterUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.meandmark.TemperatureConverterUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_SWIFT3_OBJC_INFERENCE = On;
-				SWIFT_VERSION = 4.0;
-				TEST_TARGET_NAME = TemperatureConverter;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -530,15 +438,6 @@
 			buildConfigurations = (
 				4D5B7A541E899D2B00FC8F2E /* Debug */,
 				4D5B7A551E899D2B00FC8F2E /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		4D5B7A561E899D2B00FC8F2E /* Build configuration list for PBXNativeTarget "TemperatureConverterUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				4D5B7A571E899D2B00FC8F2E /* Debug */,
-				4D5B7A581E899D2B00FC8F2E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
